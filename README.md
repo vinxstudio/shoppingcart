@@ -1,10 +1,10 @@
 This Online Shopping project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Libraries used:
-User Interface design library - (Material UI) https://github.com/mui-org/material-ui/
-State Manager - (Redux) https://github.com/reduxjs/react-redux/
-Test Library - (Jest) https://jestjs.io/docs/en/tutorial-react
-             - (Enzyme) https://jestjs.io/docs/en/tutorial-react
+Libraries used:<br />
+User Interface design library - (Material UI) https://github.com/mui-org/material-ui/<br />
+State Manager - (Redux) https://github.com/reduxjs/react-redux/<br />
+Test Library - (Jest) https://jestjs.io/docs/en/tutorial-react<br />
+             - (Enzyme) https://jestjs.io/docs/en/tutorial-react<br />
          
 
 
