@@ -9,4 +9,13 @@ describe('actions', () => {
     }
     expect(actions.addToCart(productName)).toEqual(expectedAction)
   })
+
+  it('should create an action to remove a product', () => {
+    const productName = "Apple iPhone X";
+    const expectedAction = {
+      type: types.REMOVE_PRODUCT,
+      productName
+    }
+    expect(actions.removeItem(productName)).toEqual(expectedAction)
+  })
 })
