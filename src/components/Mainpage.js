@@ -9,7 +9,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Cart from "./Cart";
 import Grid from "@material-ui/core/Grid";
-import Paper from '@material-ui/core/Paper';
+import Paper from "@material-ui/core/Paper";
 
 class Mainpage extends Component {
   handleClick = productName => {
@@ -30,14 +30,15 @@ class Mainpage extends Component {
           elevation={1}
         >
           <CardActionArea style={{ textAlign: "center" }}>
-            <Typography gutterBottom variant="body2" component="p" style={{ marginTop:10 }}>
+            <Typography
+              gutterBottom
+              variant="body2"
+              component="p"
+              style={{ marginTop: 10 }}
+            >
               {item.productName}
             </Typography>
-            <img
-              src={item.productImage}
-              alt={item.productName}
-              height="200"
-            />
+            <img src={item.productImage} alt={item.productName} height="200" />
             <CardContent>
               <Typography variant="body2" color="textSecondary" component="p">
                 ${item.price}
@@ -59,18 +60,16 @@ class Mainpage extends Component {
       );
     });
     return (
-     
       <Grid container spacing={3}>
         <Grid item xs={8}>
-        <Paper elevation={1} style={{padding:20}}>
-          <div className="box">{itemList}</div>
+          <Paper elevation={1} style={{ padding: 20, marginTop:10 }}>
+            <div className="box">{itemList}</div>
           </Paper>
         </Grid>
         <Grid item xs={4}>
           <Cart></Cart>
         </Grid>
       </Grid>
-      
     );
   }
 }
